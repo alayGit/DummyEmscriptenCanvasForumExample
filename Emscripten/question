@@ -1,0 +1,17 @@
+I am having trouble getting a Canvas, which is transfered to a PThread to display images.
+
+Interestingly when I pause the debugger, the canvas updates, but when I resume again the canvas remains static.
+
+This to me rules out any issue with the data or the provision of that data to the canvas. 
+
+My application is really complicated, so I created replicated the issue in a 'dummy program' which just displays static data.
+
+I am hoping that someone can tell me what I am doing wrong.
+
+If there is a better way of providing the code then here please let me know. This is the best I could find.  
+
+
+
+
+
+

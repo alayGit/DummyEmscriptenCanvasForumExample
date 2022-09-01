@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="./EmscriptenProcessGameMessages.js"></script>
+<script>
+var x = 4;
+var moduleReady = (ScummWebModule)().then(
+						(m) => {
+						    m.ccall("StartWorkers");
+							setInterval(
+							() => {
+								m['canvas'] = document.getElementById("canvas");
+								m.ccall("EnqueueMessageOnWorker");
+							}, 3000)
+						});
+</script>
+</head>
+<body>
+<canvas width="320" height="200" id="canvas" />
+</body>
+</html>
