@@ -4,7 +4,7 @@ This demonstrates a problem with updating the canvas through Emscripten on Pthre
 Instructions:
 
 1. Clone this repository 
-2. Run the build.bat or build.sh file which is located in Emscripten folder
+2. Run the build.bat (Windows) or build.sh (Linux) file which is located in Emscripten folder
 3. Run Chrome using special flags as follows: chrome --enable-features=SharedArrayBuffer --allow-file-access-from-files
 4. Open CanvasFailExample.html from the Emscripten folder using this Chrome session
 5. The canvas on the screen should alternate from grey to white every 5 seconds but it does not :(
