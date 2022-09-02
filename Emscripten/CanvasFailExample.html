@@ -5,10 +5,10 @@
 var x = 4;
 var moduleReady = (ScummWebModule)().then(
 						(m) => {
-						    m.ccall("StartWorkers");
+							m.ccall("StartWorkers");
+							m['canvas'] = document.getElementById("canvas");
 							setInterval(
 							() => {
-								m['canvas'] = document.getElementById("canvas");
 								m.ccall("EnqueueMessageOnWorker");
 							}, 3000)
 						});
