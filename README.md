@@ -11,7 +11,9 @@ Instructions:
 6. Refresh the page (this seems to get around a strange issue I have seen in Chrome)
 7. Open the dev tools and go to the sources tab
 8. Click on the very bottom thread (should be the bottom 'EmscriptenProcessGameMessage.worker.js')
-9. Hit the pause button lots of times and notice that the canvas actually changes sometimes.
+9. Hit the pause button lots of times (sometimes takes around 5 to 10 presses) and notice that the canvas actually changes sometimes.
+
+As you can see the canvas updating when paused you can see clearly the data is actually getting to the canvas. However it never changes when running. 
 
 This example requires lots of boilerplate, so here are the key points
 
