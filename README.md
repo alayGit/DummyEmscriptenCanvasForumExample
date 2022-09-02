@@ -8,9 +8,10 @@ Instructions:
 3. Run Chrome using special flags as follows: chrome --enable-features=SharedArrayBuffer --allow-file-access-from-files
 4. Open CanvasFailExample.html from the Emscripten folder using this Chrome session
 5. The canvas on the screen should alternate from grey to white every 3 seconds but it does not :(
-6. Open the dev tools and go to the sources tab
-7. Click on the very bottom thread (should be the bottom 'EmscriptenProcessGameMessage.worker.js')
-8. Hit the pause button lots of times and notice that the canvas actually changes sometimes.
+6. Refresh the page (this seems to get around a strange issue I have seen in Chrome)
+7. Open the dev tools and go to the sources tab
+8. Click on the very bottom thread (should be the bottom 'EmscriptenProcessGameMessage.worker.js')
+9. Hit the pause button lots of times and notice that the canvas actually changes sometimes.
 
 This example requires lots of boilerplate, so here are the key points
 
